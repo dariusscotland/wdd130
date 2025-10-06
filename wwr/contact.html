@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Updated Title for the Contact Page -->
+    <title>White Water Rafting - Contact Us & Directions</title>
+
+    <!-- Updated Meta Description for Search Engines -->
+    <meta name="description"
+        content="Have a question about trips, pricing, or safety? Contact the White Water Rafting team via our form, phone, or find directions here.">
+    <meta name="author" content="Darius Scotland">
+    <link rel="stylesheet" href="styles/rafting.css">
+
+</head>
+
+<body>
+
+    <!-- Header and Navigation are KEPT THE SAME for uniformity and usability. -->
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/z-wwr-blue.jpg" alt="Rafting Company Logo">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+
+        <!-- SECTION 1: Top Contact Information (Aligned with Wireframe) -->
+        <section id="company-summary">
+            <h1>White Water Rafting Company</h1>
+
+            <div class="contact-details-grid">
+
+                <!-- Company Information -->
+                <div class="contact-info">
+                    <p>123 Main River Street</p>
+                    <p>Kolob, California</p>
+                    <p>+1 999 999 9999</p>
+                    <p><a href="mailto:info@whitewater.com">info@whitewater.com</a></p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SECTION 2: Map and Form (Side-by-Side Layout) -->
+        <section id="map-and-form-container">
+
+            <!-- Map Column (Left Side of Wireframe) -->
+            <div class="map-column">
+                <div class="map-placeholder">
+                    <h2>Find Us</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d-111.0000!3d40.0000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDAwJzAwLjAiTiAxMTFCMDAnMDAuMCJX!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
+                        width="100%" height="450" allowfullscreen="" loading="lazy" title="Location on Google Maps">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Contact Form Column (Right Side of Wireframe) -->
+            <div class="form-column">
+                <h2>Send Us a Message</h2>
+                <form action="submit-form.php" method="post" id="contact-form">
+
+                    <!-- Name Input (Required) -->
+                    <div class="form-group">
+                        <label for="user_name">Full Name:</label>
+                        <input type="text" id="user_name" name="user_name" placeholder="John Doe" required>
+                    </div>
+
+                    <!-- Email Input (Required) -->
+                    <div class="form-group">
+                        <label for="user_email">Email Address:</label>
+                        <input type="email" id="user_email" name="user_email" placeholder="john.doe@email.com" required>
+                    </div>
+
+                    <!-- Radio Buttons for Purpose (Required and Mutually Exclusive) -->
+                    <fieldset class="form-group">
+                        <legend>Purpose of your message:</legend>
+
+                        <input type="radio" id="general" name="purpose" value="general" checked>
+                        <label for="general">General Inquiry</label><br>
+
+                        <input type="radio" id="reservation" name="purpose" value="reservation">
+                        <label for="reservation">Reservation Question</label><br>
+
+                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                        <label for="suggestion">Website Suggestion</label>
+                    </fieldset>
+
+                    <!-- Message Textarea (Required) -->
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Type your question here..."
+                            required></textarea>
+                    </div>
+
+                    <!-- Checkbox for Newsletter -->
+                    <div class="form-group newsletter-checkbox">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                    </div>
+
+                    <!-- Submission Button (Descriptive Text and Type="submit") -->
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+
+        </section>
+
+        <!-- SECTION 3: Employee Profiles ("We Are Here to Serve You") -->
+        <section id="employee-profiles">
+            <h2>We Are Here to Serve You</h2>
+            <div class="employee-grid">
+                <!-- Employee 1 with Title -->
+                <figure class="employee-card">
+                    <img src="images/placeholder.png" alt="Profile of River Guide Maya">
+                    <figcaption>Maya - Lead River Guide</figcaption>
+                </figure>
+                <!-- Employee 2 with Title -->
+                <figure class="employee-card">
+                    <img src="images/placeholder.png" alt="Profile of Booking Specialist Alex">
+                    <figcaption>Alex - Booking Specialist</figcaption>
+                </figure>
+                <!-- Employee 3 with Title -->
+                <figure class="employee-card">
+                    <img src="images/placeholder.png" alt="Profile of Safety Manager Ben">
+                    <figcaption>Ben - Safety Manager</figcaption>
+                </figure>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer is KEPT THE SAME for uniformity and branding. -->
+    <footer>
+        <p>&copy; <span id="year">2025</span> White Water Rafting - Darius Scotland</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com" aria-label="Visit our Facebook page">
+                <img src="images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com" aria-label="Visit our Twitter page">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" aria-label="Visit our Instagram page">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </nav>
+    </footer>
+
+    <script>
+        // Simple JavaScript to dynamically set the current year in the footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
