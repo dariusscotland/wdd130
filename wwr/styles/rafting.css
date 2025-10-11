@@ -62,8 +62,15 @@ nav a:hover {
     color: #03045e
 }
 
-nav a[href="contact.html"] {
+/* NAVIGATION: Highlight for the current page link */
+nav ul li a.active {
     background-color: #03045e;
+    color: white;
+    pointer-events: none; 
+}
+
+nav ul li a.active:hover {
+    background-color: #03045e; 
     color: white;
 }
 
@@ -73,6 +80,72 @@ main {
     padding-bottom: 40px;
 }
 
+/* --- HOME PAGE HERO STYLES (New) --- */
+#hero {
+    height: 70vh; 
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative; 
+}
+
+#hero-box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+}
+
+#hero-msg {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.55); 
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.home-title {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#hero-msg h4 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.book {
+    display: inline-block;
+    background-color: #00b4d8;
+    color: #03045e;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.book:hover {
+    background-color: #0077b6;
+    color: white;
+}
+/* --- END HOME PAGE HERO STYLES --- */
+
+
+/* --- ABOUT PAGE STYLES --- */
 #mission-statement {
     padding: 40px 20px 0; 
     max-width: 1400px;
@@ -142,6 +215,97 @@ main {
     text-align: center;
     background-color: #f8f9fa;
 }
+
+
+/* --- HOME PAGE GRID STYLES --- */
+#homepage-grid {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.card-button {
+    display: inline-block;
+    background-color: #0077b6;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.card-button:hover {
+    background-color: #00b4d8;
+}
+
+#river-story {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 40px;
+    align-items: center;
+    padding: 40px;
+    background-color: #e0f7fa;
+    border-radius: 8px;
+}
+
+#mountain-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#story-content {
+    text-align: left;
+}
+
+#newsletter-signup {
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 60px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+#newsletter-form {
+    max-width: 500px;
+    margin: 20px auto 0;
+    display: grid;
+    gap: 15px;
+}
+
+#newsletter-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+/* --- END HOME PAGE GRID STYLES --- */
+
+
+/* --- CONTACT PAGE STYLES --- */
 
 .contact-main {
     max-width: 1200px;
@@ -290,6 +454,175 @@ fieldset.form-group label {
     border-radius: 0 0 8px 8px;
 }
 
+/* --- TRIPS PAGE STYLES --- */
+
+/* Hero Section */
+#trips-hero {
+    background-color: #00b4d8;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 40px;
+}
+
+#trips-hero h1 {
+    color: white; 
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+#trips-hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+.trips-cta-button {
+    display: inline-block;
+    background-color: #03045e;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+.trips-cta-button:hover {
+    background-color: #0077b6;
+}
+
+/* Trip Descriptions Grid (Multi-Column Layout) */
+#trip-descriptions {
+    padding: 20px;
+    text-align: center;
+}
+
+.trip-card-grid {
+    /* CSS Grid for a multi-column layout */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.trip-card {
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.trip-card figcaption {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #03045e;
+    padding: 15px 15px 5px;
+}
+
+.trip-card p {
+    padding: 0 15px;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.trip-price {
+    font-weight: bold;
+    color: #0077b6;
+    padding-bottom: 15px;
+}
+
+
+/* Trip Table Styling */
+#trip-table-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.table-container {
+    overflow-x: auto; 
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead th {
+    background-color: #0077b6;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e0f7fa;
+}
+
+/* Bottom CTA Section */
+#trips-cta-bottom {
+    background-color: #03045e;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#trips-cta-bottom h2 {
+    color: #00b4d8;
+    margin-bottom: 15px;
+}
+
+#trips-cta-bottom p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #00b4d8;
+    color: #03045e;
+    padding: 15px 40px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: white;
+}
+
+/* --- FOOTER STYLES --- */
+
 footer {
     display: grid;
     grid-template-columns: 1fr auto; 
@@ -310,6 +643,9 @@ footer {
     filter: brightness(1.5);
 }
 
+
+/* --- MEDIA QUERIES --- */
+
 @media (max-width: 800px) {
     
     #map-and-form-container {
@@ -319,6 +655,23 @@ footer {
 
     .employee-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .history-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #river-story {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -355,5 +708,11 @@ footer {
     
     .socialmedia {
         margin-top: 10px;
+    }
+
+    /* Trip grid mobile adjustment */
+    .trip-card {
+        margin: 0 auto;
+        max-width: 400px;
     }
 }

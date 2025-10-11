@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Water Rafting | Home</title>
+
+    <meta name="description"
+        content="Experience the thrill of white water rafting with the best guides. Book your adventure trip on the Kolob River today!">
+    <meta name="author" content="Darius Scotland">
+    <link rel="stylesheet" href="styles/rafting.css">
+
+</head>
+
+<body>
+
+    <header>
+        <a id="logo_link" href="index.html">
+            <img class="logo" src="images/z-wwr-blue.jpg" alt="Rafting Company Logo">
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-main">
+
+        <div id="hero">
+            <div id="hero-box">
+                <img id="hero-img" src="images/enjoying-white-water-rafting.jpg"
+                    alt="People enjoying white water rafting">
+            </div>
+            <section id="hero-msg">
+                <h1 class="home-title">Adventure Awaits!</h1>
+                <h4>Life is an adventure. Raft it.</h4>
+                <div class="button-box">
+                    <a class="book" href="trips.html">Book Your Trip Now</a>
+                </div>
+            </section>
+        </div>
+
+        <section id="homepage-grid">
+
+            <div class="card-grid">
+                <section class="card trips-card">
+                    <img class="card-img" src="images/narrow_river.jpg" alt="Narrow river canyon">
+                    <h2>View Our Trips</h2>
+                    <p>From beginner-friendly floats to expert rapids, find the perfect adventure for your group.</p>
+                    <a href="trips.html" class="card-button">See Trips</a>
+                </section>
+
+                <section class="card guides-card">
+                    <img class="card-img" src="images/camping.jpg" alt="People setting up camp near a river">
+                    <h2>Meet the Guides</h2>
+                    <p>Our experienced and certified guides are dedicated to your safety and unforgettable fun!</p>
+                    <a href="about.html" class="card-button">Meet the Team</a>
+                </section>
+            </div>
+
+            <section id="river-story">
+                <img id="mountain-img" src="images/mountain_river.jpg" alt="Scenic view of a mountain river">
+                <div id="story-content">
+                    <h2>Paddle into the Wilderness</h2>
+                    <p>
+                        Discover the raw, untouched beauty of the Kolob River. Our multi-day trips offer a complete
+                        escape,
+                        combining exhilarating rapids with peaceful evenings camping under the stars. It's more than a
+                        trip—it's
+                        a memory waiting to be made.
+                    </p>
+                    <p>
+                        We prioritize safety and environmental stewardship on every journey. Our small group sizes
+                        ensure a personalized and
+                        respectful experience of this incredible natural wonder. Book your journey today and find out
+                        why our guests return year after year.
+                    </p>
+                </div>
+            </section>
+
+
+            <section id="newsletter-signup">
+                <h2>Join Our Monthly Newsletter</h2>
+                <form action="submit-newsletter.php" method="post" id="newsletter-form">
+
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                    </div>
+
+                    <button type="submit" class="submit-button">Subscribe</button>
+                </form>
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="year">2025</span> White Water Rafting - Darius Scotland</p>
+
+        <nav class="socialmedia">
+            <a href="https://facebook.com" aria-label="Visit our Facebook page">
+                <img src="images/facebook.png" alt="facebook icon">
+            </a>
+            <a href="https://twitter.com" aria-label="Visit our Twitter page">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" aria-label="Visit our Instagram page">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+        </nav>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
